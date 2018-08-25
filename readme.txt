@@ -3,16 +3,18 @@
 Contributors: mmuhsin
 Plugin Name: Testimonials Slider Block
 Plugin URI: https://github.com/laccadive-io/testimonials-slider-block
-Tags: gutenberg, testimonials, gts, slider
+Tags: gutenberg, testimonials, slider
 Author URI: https://laccadive.io/
 Author: Muhammad Muhsin
 Donate link: http://paypal.me/supportplugindev
 Requires at least: 4.5
 Tested up to: 4.9.8
+Requires PHP: 5.6
+Stable tag: trunk
 Version: 1.0.0
 License: GPLv3
 
-This project brings a testimonials slider block to the new WordPress Gutenberg editor.
+This plugin brings a testimonials slider block to the new WordPress Gutenberg editor.
 
 == Description ==
 
@@ -35,10 +37,10 @@ From your WordPress dashboard
 
 == Screenshots ==
 
-<img width="963" alt="testimonials slider block" src="https://user-images.githubusercontent.com/11702935/44297822-ca542700-a2f5-11e8-879e-bac69b2129f1.JPG">
+testimonials-slider-block/assets/screenshot-1.jpg
 
 == Changelog ==
 
 == Donations ==
 
-If you like the plugin, consider a donation to support further development. Click here http://paypal.me/supportplugindev
+If you like the plugin, consider a donation to support further development. [Click here](http://paypal.me/supportplugindev)

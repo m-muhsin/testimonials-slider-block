@@ -29,10 +29,10 @@ function gts_block_assets() {
 		// filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.style.build.css' ) // Version: filemtime — Gets file modification time.
 	);
 
-	wp_enqueue_style('font-awesome', plugins_url( 'lib/css/all.min.css', dirname( __FILE__ ) ), array( 'wp-blocks' ), false );
-	wp_enqueue_style('bootstrap-style', plugins_url( 'lib/bootstrap.min.css', dirname( __FILE__ ) ) );
+	wp_enqueue_style('font-awesome', plugins_url( 'lib/css/fontawesome.min.css', dirname( __FILE__ ) ), array( 'wp-blocks' ), false );
+	wp_enqueue_style('bootstrap-style', plugins_url( 'lib/css/bootstrap.min.css', dirname( __FILE__ ) ) );
 
-	wp_enqueue_script('bootstrap-script',  plugins_url( 'lib/bootstrap.min.js', dirname( __FILE__ ) ), array('jquery'));
+	wp_enqueue_script('bootstrap-script',  plugins_url( 'lib/js/bootstrap.min.js', dirname( __FILE__ ) ), array('jquery'));
 } 
 
 // Hook: Frontend assets.
