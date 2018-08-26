@@ -34,8 +34,12 @@ registerBlockType("gts/testimonials-slider-block", {
   keywords: [__("Testimonials Slider"), __("gts")],
 
   attributes: {
+    id: {
+      source: "attribute",
+      selector: ".carousel.slide",
+      attribute: "id"
+    },
     testimonials: {
-      type: "array",
       source: "query",
       default: [],
       selector: "blockquote.testimonial",
@@ -46,32 +50,22 @@ registerBlockType("gts/testimonials-slider-block", {
           attribute: "src"
         },
         index: {
-          type: "string",
           source: "text",
           selector: "span.testimonial-index"
         },
         content: {
-          type: "string",
           source: "text",
           selector: "span.testimonial-text"
         },
         author: {
-          type: "string",
           source: "text",
           selector: "span.testimonial-author span"
         },
         link: {
-          type: "string",
           source: "text",
           selector: ".testimonial-author-link"
         }
       }
-    },
-    id: {
-      type: "string",
-      source: "attribute",
-      selector: ".carousel.slide",
-      attribute: "id"
     }
   },
 
@@ -87,6 +81,7 @@ registerBlockType("gts/testimonials-slider-block", {
   // The "edit" property must be a valid function.
   edit: props => {
     const { testimonials } = props.attributes;
+    
     if (!props.attributes.id) {
       const id = `testimonial${Math.floor(Math.random() * 100)}`;
       props.setAttributes({
@@ -257,7 +252,7 @@ registerBlockType("gts/testimonials-slider-block", {
         );
       });
     return (
-      <div>
+      <div className={props.className} >
         {testimonialsList}
         <button
           className="add-more-testimonial"
@@ -290,8 +285,7 @@ registerBlockType("gts/testimonials-slider-block", {
    * @link https://wordpress.org/gutenberg/handbook/block-api/block-edit-save/
    */
   save: props => {
-    const { testimonials } = props.attributes; // Content in our block.
-    const id = props.attributes.id;
+    const { id, testimonials } = props.attributes;
     const carouselIndicators = testimonials.map(function(testimonial, index) {
       return (
         <li
@@ -320,7 +314,7 @@ registerBlockType("gts/testimonials-slider-block", {
             <div className="row">
               {testimonial.image && (
                 <div className="gts__picture col-3">
-                <img src={testimonial.image} style={{ display: 'none' }} />
+                  <img src={testimonial.image} style={{ display: "none" }} />
                   <div
                     className="gts__picture__image"
                     style={{
