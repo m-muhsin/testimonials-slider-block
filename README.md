@@ -34,4 +34,4 @@ npm run build
 
 ---
 
-Feel free to say hi to me on Twitter [@muhsinlk](https://twitter.com/muhsinlk/)
+This project was based on [guten-testimonial-block](https://github.com/laccadive-io/guten-testimonial-block) which was bootstrapped with [Create Guten Block](https://github.com/ahmadawais/create-guten-block).
