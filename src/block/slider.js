@@ -81,7 +81,7 @@ registerBlockType("gts/testimonials-slider-block", {
   // The "edit" property must be a valid function.
   edit: props => {
     const { testimonials } = props.attributes;
-    
+
     if (!props.attributes.id) {
       const id = `testimonial${Math.floor(Math.random() * 100)}`;
       props.setAttributes({
@@ -168,6 +168,7 @@ registerBlockType("gts/testimonials-slider-block", {
                           {props.isSelected && (
                             <div className="gts__picture__actions">
                               <a
+                                href="#"
                                 onClick={() => {
                                   const newObject = Object.assign(
                                     {},
@@ -200,7 +201,11 @@ registerBlockType("gts/testimonials-slider-block", {
                           />
                         </div>
                       ) : (
-                        <a className="gts__picture__image" onClick={open}>
+                        <a
+                          href="#"
+                          className="gts__picture__image"
+                          onClick={open}
+                        >
                           Select Image
                         </a>
                       )
@@ -252,7 +257,7 @@ registerBlockType("gts/testimonials-slider-block", {
         );
       });
     return (
-      <div className={props.className} >
+      <div className={props.className}>
         {testimonialsList}
         <button
           className="add-more-testimonial"
