@@ -8,7 +8,7 @@ Author URI: https://laccadive.io/
 Author: Muhammad Muhsin
 Donate link: http://paypal.me/supportplugindev
 Requires at least: 4.5
-Tested up to: 4.9.8
+Tested up to: 5.0
 Requires PHP: 5.6
 Stable tag: trunk
 Version: 1.0.0
@@ -40,6 +40,15 @@ From your WordPress dashboard
 testimonials-slider-block/assets/screenshot-1.jpg
 
 == Changelog ==
+
+= 1.1.0 (14/11/2018) =
+* Works upto WordPress 5.0 now
+
+= 1.0.1 (12/11/2018) =
+* Added a11y support for author images
+
+= 1.0.0 (21/08/2018) =
+* First release
 
 == Donations ==
 
