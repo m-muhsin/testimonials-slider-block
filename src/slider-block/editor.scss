@@ -29,11 +29,13 @@ button.add-more-testimonial {
 	font-size: 2em;
 	color: white;
 	line-height: 1;
+	cursor: pointer;
 }
 
 span.remove-testimonial {
 	right: 30px;
 	position: absolute;
+	cursor: pointer;
 }
 
 textarea.editor-plain-text.content-plain-text,

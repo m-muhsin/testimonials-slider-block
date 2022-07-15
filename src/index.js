@@ -1,4 +1,4 @@
 /**
  * Import blocks
  */
-import './block/slider.js';
+import './slider-block';
