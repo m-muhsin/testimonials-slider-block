@@ -71,7 +71,7 @@ const extractConfig = {
 		{
 			loader: 'sass-loader',
 			options: {
-				outputStyle: 'production' === process.env.MODE ? 'compressed' : 'nested',
+				outputStyle: 'production' === process.env.MODE ? 'compressed' : 'expanded',
 			},
 		},
 	],

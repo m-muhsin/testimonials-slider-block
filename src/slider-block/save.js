@@ -1,3 +1,5 @@
+const { createElement } = wp.element;
+
 export default function Save(props) {
     const { id, testimonials } = props.attributes;
     const carouselIndicators = testimonials.map(function (testimonial, index) {

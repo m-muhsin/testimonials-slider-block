@@ -1,3 +1,4 @@
+const { createElement } = wp.element;
 const { MediaUpload, PlainText } = wp.editor;
 
 export default function Edit(props) {
