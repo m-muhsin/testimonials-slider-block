@@ -1,5 +1,12 @@
 const { createElement } = wp.element;
 
+// Ensure URL is absolute by adding https:// if no protocol is present
+const ensureAbsoluteUrl = (url) => {
+    if (!url) return url;
+    if (url.match(/^https?:\/\//i)) return url;
+    return 'https://' + url;
+};
+
 export default function Save(props) {
     const { id, testimonials } = props.attributes;
     const carouselIndicators = testimonials.map(function (testimonial, index) {
@@ -51,7 +58,7 @@ export default function Save(props) {
                             )}
                             {testimonial.link && (
                                 <p className="testimonial-author-container">
-                                    <a target="_blank" href={testimonial.link} >
+                                    <a target="_blank" href={ensureAbsoluteUrl(testimonial.link)} >
                                         <i className="fas fa-user" />
                                         <span className="testimonial-author-link">
                                             {testimonial.link}
