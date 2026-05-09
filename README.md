@@ -31,7 +31,3 @@ npm run build
 ```
 
 <img width="963" alt="testimonials slider block" src="https://user-images.githubusercontent.com/11702935/44297822-ca542700-a2f5-11e8-879e-bac69b2129f1.JPG">
-
----
-
-This project was based on [guten-testimonial-block](https://github.com/laccadive-io/guten-testimonial-block) which was bootstrapped with [Create Guten Block](https://github.com/ahmadawais/create-guten-block).
