@@ -56,7 +56,3 @@ testimonials-slider-block/assets/screenshot-1.jpg
 
 = 1.0.0 (21/08/2018) =
 * First release
-
-== Donations ==
-
-If you like the plugin, consider a donation to support further development. [Click here](http://paypal.me/supportplugindev)
