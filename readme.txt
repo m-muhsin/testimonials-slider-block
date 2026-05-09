@@ -6,7 +6,6 @@ Plugin URI: https://github.com/laccadive-io/testimonials-slider-block
 Tags: gutenberg, testimonials, slider
 Author URI: https://muhammad.dev/
 Author: Muhammad Muhsin
-Donate link: http://paypal.me/supportplugindev
 Requires at least: 4.5
 Tested up to: 5.4.1
 Requires PHP: 5.6
